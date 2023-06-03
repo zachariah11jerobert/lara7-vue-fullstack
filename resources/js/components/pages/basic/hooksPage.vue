@@ -17,8 +17,9 @@ export default{
         console.log(this.name)
     },
 
-    created(){('data and other function is avaiable but not html',this.name)
-        console.log
+    created(){
+        // call mostly initial data from it...
+        console.log('data and other function is avaiable but not html',this.name)
     },
 
     mounted(){
