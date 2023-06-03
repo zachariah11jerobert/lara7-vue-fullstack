@@ -4,6 +4,8 @@ import Router from "vue-router";
 Vue.use(Router);
 import firstPage from "./components/pages/myFirstVuePage";
 import newRoutePage from "./components/pages/newRoutePage";
+import hooksPage from './components/pages/basic/hooksPage';
+import methodsPage from './components/pages/basic/methodsPage';
 
 const routes = [
     {
@@ -14,6 +16,14 @@ const routes = [
         path: "/new-route",
         component: newRoutePage,
     },
+    {
+        path: '/hooks',
+        component: hooksPage
+    },
+    {
+        path: '/methods',
+        component: methodsPage
+    }
 ];
 
 export default new Router({
