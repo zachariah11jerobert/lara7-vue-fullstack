@@ -1,12 +1,15 @@
-require('./bootstrap');
+require("./bootstrap");
 
+window.Vue = require("vue");
+import router from "./router";
+import ViewUi from "view-design";
+import "view-design/dist/styles/iview.css";
 
-window.Vue=require('vue');
-import router from './router';
+Vue.use(ViewUi);
 
-Vue.component('mainapp',require('./components/mainapp.vue').default);
+Vue.component("mainapp", require("./components/mainapp.vue").default);
 
-const app=new Vue({
-    el:'#app',
-    router
+const app = new Vue({
+    el: "#app",
+    router,
 });

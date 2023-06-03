@@ -7,7 +7,19 @@ import newRoutePage from "./components/pages/newRoutePage";
 import hooksPage from './components/pages/basic/hooksPage';
 import methodsPage from './components/pages/basic/methodsPage';
 
+// project pages
+import home from './components/pages/home';
+import tags from './components/pages/tags';
+
 const routes = [
+    {
+        path: "/",
+        component: home,
+    },
+    {
+        path: "/tags",
+        component: tags,
+    },
     {
         path: "/my-new-vue-route",
         component: firstPage,
